@@ -17,3 +17,5 @@ def main():
         quick_picks.sort()
         print(quick_picks)
 main()
+
+#

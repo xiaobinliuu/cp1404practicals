@@ -1,15 +1,24 @@
-def main(): #this will give the score and show if the score is bad, passable or excellent
-    score = float(input("enter score: "))
-    print(score_is(score))
+import random
 
-def score_is(score): #shows if the score is bad, passable or excellent
-    if score  < 0 or score > 100:
-        print("invalid score")
-    elif score >= 90 <= 100:
-        print("excellent")
+
+def main(): '''this asks us how many random numbers are wanted'''
+random_number = int(input("How many random number?: "))
+#get_random(random_number)
+
+
+def get_random(random_number): '''this tells us the results in the out put file'''
+OUTPUT_FILE = "results.txt"
+out_file = open(OUTPUT_FILE, 'w')
+for i in range(random_number):
+    score = random.randint(0, 100)
+    if score >= 90:
+            print(format(score), "is Excellent", file=out_file)
     elif score >= 50:
-        print("pass")
+            print(format(score), "is Passable", file=out_file)
     else:
-        print("bad")
+            print(format(score), "is Bad", file=out_file)
+    #out_file.close()
+
 
 main()
+

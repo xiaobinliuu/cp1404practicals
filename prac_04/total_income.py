@@ -21,4 +21,3 @@ def print_report(incomes,number_of_months):
 
 
 main()
-#

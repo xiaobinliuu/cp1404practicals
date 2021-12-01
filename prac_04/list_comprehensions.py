@@ -43,4 +43,3 @@ print(int_list)
 list_greater_than_9 = [number for number in int_list if number>9]
 print(list_greater_than_9)
 
-#

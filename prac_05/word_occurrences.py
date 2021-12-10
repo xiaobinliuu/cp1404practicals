@@ -8,7 +8,7 @@ def main():
 
     for word, value in Word_To_Number.items():
         print("{:6} : {:5}".format(word, value))
-
+# code all good, but the output is not sort. 
 
 if __name__ == '__main__':
     main()
